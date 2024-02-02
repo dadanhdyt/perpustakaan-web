@@ -24,6 +24,6 @@ class DatabaseSeeder extends Seeder
         // ]);
         KategoriBuku::factory(10)->create();
         Buku::factory(5)->create();
-        KategoriBukuRelasi::factory(10)->create();
+        KategoriBukuRelasi::factory(2)->create();
     }
 }

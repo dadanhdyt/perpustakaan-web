@@ -20,7 +20,7 @@ class KategoriBukuRelasiFactory extends Factory
     {
         return [
             "buku_BukuID" => Buku::inRandomOrder()->first()->BukuID,
-            'kategori_buku_KategoriID' => KategoriBuku::inRandomOrder()->KategoriID,
+            'kategori_buku_KategoriID' => KategoriBuku::inRandomOrder()->first()->KategoriID,
         ];
     }
 }
