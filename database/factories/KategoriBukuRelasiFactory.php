@@ -2,6 +2,8 @@
 
 namespace Database\Factories;
 
+use App\Models\Buku;
+use App\Models\KategoriBuku;
 use Illuminate\Database\Eloquent\Factories\Factory;
 
 /**
@@ -17,7 +19,8 @@ class KategoriBukuRelasiFactory extends Factory
     public function definition(): array
     {
         return [
-            //
+            "buku_BukuID" => Buku::inRandomOrder()->first()->BukuID,
+            'kategori_buku_KategoriID' => KategoriBuku::inRandomOrder()->KategoriID,
         ];
     }
 }

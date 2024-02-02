@@ -9,5 +9,5 @@ class KoleksiPribadi extends Model
 {
     use HasFactory;
     protected $primaryKey = "KoleksiPribadiID";
-    protected $table = 'koleksi_pribadi';
+    protected $table = 'koleksipribadi';
 }

@@ -9,5 +9,5 @@ class UlasanBuku extends Model
 {
     use HasFactory;
     protected $primaryKey = "UlasanBukuID";
-    protected $table = 'buku';
+    protected $table = 'ulasanbuku';
 }

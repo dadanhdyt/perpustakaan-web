@@ -3,6 +3,10 @@
 namespace Database\Seeders;
 
 // use Illuminate\Database\Console\Seeds\WithoutModelEvents;
+
+use App\Models\Buku;
+use App\Models\KategoriBuku;
+use App\Models\KategoriBukuRelasi;
 use Illuminate\Database\Seeder;
 
 class DatabaseSeeder extends Seeder
@@ -18,5 +22,8 @@ class DatabaseSeeder extends Seeder
         //     'name' => 'Test User',
         //     'email' => 'test@example.com',
         // ]);
+        KategoriBuku::factory(10)->create();
+        Buku::factory(5)->create();
+        KategoriBukuRelasi::factory(10)->create();
     }
 }

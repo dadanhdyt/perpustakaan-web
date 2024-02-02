@@ -17,7 +17,7 @@ class KategoriBukuFactory extends Factory
     public function definition(): array
     {
         return [
-            'NamaKategori' => ""
+            'NamaKategori' => fake()->sentence(6),
         ];
     }
 }
